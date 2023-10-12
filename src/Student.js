@@ -1,6 +1,6 @@
-/* eslint-disable react/style-prop-object */
 import React, { useState } from 'react'
-import {Link} from 'react-router-dom'
+import {Link, useNavigate} from 'react-router-dom'
+import StuContact from './StuContact'
 
 export default function Student() {
   const [data] = useState([
@@ -11,12 +11,13 @@ export default function Student() {
     {name: 'Anuj', id: 5, age: 23, course: 'FrontEnd', batch: 'May'},
     {name: 'Harsh', id: 6, age: 22, course: 'BackEnd', batch: 'September'}
   ])
+  let nav = useNavigate()
 
   return (
     <div className='stu'>
       <div className='title'>
         <h1>Student Details</h1>
-        <button id='btn'>Add New Student</button>
+        <button id='btn' onClick={()=> nav('/StuContact')}>Add New Student</button>
       </div>
 
       <table id='table' border={1}>

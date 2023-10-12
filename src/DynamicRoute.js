@@ -6,7 +6,7 @@ export default function DynamicRoute() {
   let navigate = useNavigate()
   const data = useParams()
 
-  let changeHandle = () => {
+  let changeHandle = ()=> {
     console.log("input");
   }
   let filterData = location.state.filter((e) => {

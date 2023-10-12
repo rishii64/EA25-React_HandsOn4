@@ -4,6 +4,7 @@ import Student from "./Student"
 import Contact from "./Contact"
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom"
 import DynamicRoute from './DynamicRoute'
+import StuContact from './StuContact'
 
 export default function Hook() {
   return (
@@ -18,6 +19,7 @@ export default function Hook() {
                 <Route path='/' element={<Home />} />
                 <Route path='/student' element={<Student />} />
                 <Route path='/contact' element={<Contact />} />
+                <Route path='/StuContact' element={<StuContact />} />
                 <Route path='/student/:id' element={<DynamicRoute />} />
             </Routes>
         </BrowserRouter>
