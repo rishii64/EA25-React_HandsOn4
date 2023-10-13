@@ -84,7 +84,8 @@ input{
     font-size: calc(8px + 1vw);
   }
   #table{
-    font-size: calc(10px + 1vw);
+    font-size: calc(9px + 1vw);
+    width: 95vw;
   }
   input{
     width: 7em;
