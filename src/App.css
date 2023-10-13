@@ -86,4 +86,20 @@ input{
   #table{
     font-size: calc(10px + 1vw);
   }
+  input{
+    width: 5em;
+    height: 2em;
+    font-size: 15px;
+  }
+  #data{
+    margin-top: 20px;
+  }
+  #inputDetails{
+    margin: 23px 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  #back,#update{
+    font-size: 8px;
+  }
 }

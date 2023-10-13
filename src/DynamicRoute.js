@@ -27,7 +27,6 @@ export default function DynamicRoute() {
           <button id='back' onClick={()=> navigate(-1)}>Back</button>
           <button id='update'>Update</button>
         </div>
-        
     </div>
   )
 }
