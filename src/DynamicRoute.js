@@ -9,13 +9,10 @@ export default function DynamicRoute() {
   let changeHandle = ()=> {
     console.log("input");
   }
-  let filterData = location.state.filter((e) => {
-    if (e.id === Number(data.id)) {
-      return e
-    }
-  })
+  let filterData = location.state.filter((e) => 
+    e.id === Number(data.id) ? e : null
+  )
   let [details] = useState(filterData[0])
-  // console.log(details);
   return (
     <div id='data'>
       <div id='inputDetails'>

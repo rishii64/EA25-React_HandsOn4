@@ -34,7 +34,7 @@ p{
   margin: 30px auto;
 }
 #btn{
-  width: 15em;
+  width: 14em;
   height: 3em;
   border-radius: 20px;
 }
@@ -72,25 +72,18 @@ input{
 #btn,#back,#update:hover{
   cursor: pointer;
 }
-/* a{
-  color: blueviolet;
-  font-family: Arial;
-  font-size: 15px;
-  text-decoration: underline;
-} */
-
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (max-width:550px) {
+  #linkHead{
+    font-size: calc(20px + 1vw);
   }
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  h1{
+    font-size: calc(14px + 1vw);
   }
-  to {
-    transform: rotate(360deg);
+  #btn{
+    width: 10em;
+    font-size: calc(8px + 1vw);
+  }
+  #table{
+    font-size: calc(10px + 1vw);
   }
 }

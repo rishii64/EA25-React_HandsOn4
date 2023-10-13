@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import {Link, useNavigate} from 'react-router-dom'
-import StuContact from './StuContact'
 
 export default function Student() {
   const [data] = useState([
@@ -44,7 +43,6 @@ export default function Student() {
           })}
         </tbody>
       </table>
-
     </div>
   )
 }
